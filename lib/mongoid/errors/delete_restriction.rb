@@ -19,7 +19,7 @@ module Mongoid
         super(
           compose_message(
             "delete_restriction",
-            { document: document.class, relation: relation }
+            { document: document.class.model_name.human, relation: relation }
           )
         )
       end
